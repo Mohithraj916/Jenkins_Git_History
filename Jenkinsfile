@@ -8,6 +8,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
+             script {
                changeLogSets = currentBuild.changeSets
                     for (int i = 0; i < changeLogSets.size(); i++) {
                         entries = changeLogSets[i].items
@@ -21,6 +22,7 @@ pipeline {
         }
     }
 }
+             }
             }
         }
       stage('Success') { 
