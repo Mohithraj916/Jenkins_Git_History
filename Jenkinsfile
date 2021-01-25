@@ -27,11 +27,7 @@ pipeline {
             }
         }
    
-         stage('Success') { 
-            steps {
-             echo "Complete"
-            }
-         }
+     
        
     }
 }
