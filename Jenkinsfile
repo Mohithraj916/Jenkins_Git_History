@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-               changeLogSets = currentBuild.rawBuild.changeSets
+               changeLogSets = currentBuild.changeSets
                     for (int i = 0; i < changeLogSets.size(); i++) {
                         entries = changeLogSets[i].items
                         for (int j = 0; j < entries.length; j++) {
