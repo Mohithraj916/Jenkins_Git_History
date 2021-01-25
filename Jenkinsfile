@@ -8,6 +8,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
+             echo 'Script Start'
              script {
                changeLogSets = currentBuild.changeSets
                     for (int i = 0; i < changeLogSets.size(); i++) {
