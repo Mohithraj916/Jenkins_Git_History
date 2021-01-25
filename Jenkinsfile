@@ -1,10 +1,10 @@
-pipeline {
-    agent any 
-    def changeLogSets
+ def changeLogSets
     def entries
     def entry
     def files
     def file
+pipeline {
+    agent any 
     stages {
         stage('Build') { 
             steps {
